@@ -92,6 +92,9 @@ object FunctionalProgramming extends App {
     Internally compiler will chain map and flatmap for the above For comprehension.
     map/flatmap chain and For Comprehension is totally identical.
      */
+    val a = List(1, 2, 3, 4)
+    val aNew = for (i <- a if i % 2 == 0) yield "hello " + i
+    println(aNew) // output: List(hello 2, hello 4)
 
     // --Methods with multiple Parameter(currying)--
     def add(a: Int) = (b: Int) => a + b;
