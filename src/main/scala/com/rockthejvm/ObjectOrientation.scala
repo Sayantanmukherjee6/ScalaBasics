@@ -2,6 +2,8 @@ package com.rockthejvm
 
 import java.security.KeyStore.TrustedCertificateEntry
 
+import com.rockthejvm.FunctionalProgramming.Action
+
 object ObjectOrientation extends App {
 
     // --class and instance--
@@ -80,6 +82,18 @@ object ObjectOrientation extends App {
       override def eat(animal: Animal): Unit = println("i am a dinosaur, so I can eat pretty much anything")
      }
      val dinosaur = Carnivore_Anonymous_SomeID
+     */
+
+    // Example 2
+    trait Action{
+      def act(arg:Int): Int
+    }
+    val anAction:Action = (x:Int) => x+1
+    /*
+    The above statement is similar to:
+        val anAction:Action = new Action {
+            override def act(x:Int): Int = x+1
+        }
      */
 
     // --singleton object--
