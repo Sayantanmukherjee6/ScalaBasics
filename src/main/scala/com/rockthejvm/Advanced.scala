@@ -85,7 +85,7 @@ object Advanced extends App {
   }
   println(23.isEven())
   /*
-  If implicit is defined before class then we need to create an object to access the class methods.
+  If implicit is not defined before class then we need to create an object to access the class methods.
   But if implicit is defined then we don't need to create an object. We can directly call methods.
   So under the hood:
       23.isEven() == new MyRichInteger(23).isEven()
