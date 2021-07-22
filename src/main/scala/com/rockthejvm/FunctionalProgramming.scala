@@ -45,7 +45,7 @@ object FunctionalProgramming extends App {
     doubler(4) //8
     /*
     The above shorthand notation is equivalent to:
-        new Function1[Int,Int]{
+        val doubler:Function1[Int,Int] = new Function1[Int,Int]{
            override def apply(x:Int):Int = 2 * x
         }
      */
