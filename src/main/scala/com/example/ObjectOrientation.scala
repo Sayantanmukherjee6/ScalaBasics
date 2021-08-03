@@ -1,4 +1,4 @@
-package com.rockthejvm
+package com.example
 
 import java.security.KeyStore.TrustedCertificateEntry
 

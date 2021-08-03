@@ -1,4 +1,4 @@
-package com.rockthejvm
+package com.example
 
 object ProblemSet1 extends App {
 

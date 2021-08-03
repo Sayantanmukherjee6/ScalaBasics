@@ -1,4 +1,4 @@
-package com.rockthejvm
+package com.example
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
