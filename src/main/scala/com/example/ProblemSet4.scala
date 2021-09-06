@@ -86,7 +86,7 @@ object ProblemSet4 extends App {
     case Nil => Nil
     case _ => {
       val (a,b) = l.partition(x => x == l.head) // where a = partition1 and b = partition2
-      a :: pack(b)
+      a :: packGroup(b)
     }
   }
   println(packGroup(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
