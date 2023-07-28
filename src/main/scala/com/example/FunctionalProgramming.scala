@@ -55,6 +55,7 @@ object FunctionalProgramming extends App {
     val doublerNew: Int => Int = (x:Int) => 2 * x
 
     // --Higher Order Functions--
+    // https://testingpool.com/scala-pass-function-as-a-parameter/
     //Methods/Functions that take functions as args or returns function as result
     val aMappedList:List[Int] = List(1,2,3).map(x => x+1)
     println(aMappedList) // List(2, 3, 4)
